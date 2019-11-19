@@ -2,7 +2,9 @@ package com.example.chousnthere_it;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,5 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //juhyo test
+    public void onClick_other(View view){
+        Intent intent =new Intent(this, other.class);
+        startActivity(intent);
+    }
+
 }
