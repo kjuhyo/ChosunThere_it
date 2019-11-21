@@ -6,22 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Classroom extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_classroom);
     }
 
-    public void onClick_other(View view){
-        Intent intent =new Intent(this, other.class);
+    public void onClick_C_location(View view){
+        Intent intent = new Intent(this, Classroom_Location.class);
         startActivity(intent);
     }
 
-    public void onClick_classroom(View view){
-        Intent intent=new Intent(this, Classroom.class);
+    public void onClick_C_empty(View view){
+        Intent intent = new Intent(this, Classroom_empty.class);
         startActivity(intent);
     }
-
 }

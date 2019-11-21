@@ -12,11 +12,19 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/other_button"
+            android:id="@+id/other_btn"
             android:onClick="onClick_other"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="other" />
+
+        <Button
+            android:id="@+id/classroom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick_classroom"
+            android:text="CLASSROOM" />
     </LinearLayout>
 
     <TextView

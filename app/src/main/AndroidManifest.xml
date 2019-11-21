@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".other"></activity>
-        <!-- 소영 : Splash 추가 -->
+        <activity android:name=".Classroom_empty"></activity>
+        <activity android:name=".Classroom_Location" />
+        <activity android:name=".Classroom" />
+        <activity android:name=".other" /> <!-- 소영 : Splash 추가 -->
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
@@ -20,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
