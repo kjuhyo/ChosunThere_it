@@ -24,4 +24,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClick_univ(View view) {
+        Intent intent=new Intent(this, UnivDetailActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClick_prof(View view) {
+        Intent intent=new Intent(this, ProfActivity.class);
+        startActivity(intent);
+    }
+
 }

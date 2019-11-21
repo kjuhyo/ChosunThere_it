@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ChousnThere_it</string>
+    <string name="title_univ_list">Info</string>
+    <string name="title_univ_detail">Univ Detail</string>
 </resources>
