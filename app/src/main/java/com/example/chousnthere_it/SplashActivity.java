@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class SplashActivity extends AppCompatActivity {
-    private static int SPLASH_TIME = 500; // 화면 전환 타이머
+    private static int SPLASH_TIME = 3000; // 화면 전환 타이머
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
