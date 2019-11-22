@@ -1,76 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!--    상단 여백-->
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="369dp">
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
-
-            <TableRow
-                android:layout_width="186dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/univ_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="onClick_univ"
-                    android:text="대학건물" />
-
-                <Button
-                    android:id="@+id/prof_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClick_prof"
-                    android:text="교수님" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="183dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/classroom_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="onClick_classroom"
-                    android:text="CLASSROOM" />
-
-                <Button
-                    android:id="@+id/other_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="onClick_other"
-                    android:text="other" />
-
-            </TableRow>
-
-        </TableRow>
-
+        android:layout_height="0dp" android:layout_weight="5">
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    중앙 버튼 여백 1행-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="2">
+<!--        대학건물 버튼 자리-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/univ_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/univbtn"
+                android:onClick="onClick_univ" />
+        </LinearLayout>
+<!--        강의실 버튼 자리-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/classroom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/classrmbtn"
+                android:onClick="onClick_classroom" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    중앙 버튼 여백 2행-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="2">
+<!--        교수님 버튼 자리-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/prof_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/profbtn"
+                android:onClick="onClick_prof" />
+        </LinearLayout>
+<!--        그외편의 버튼 자리-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/other_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/otherbtn"
+                android:onClick="onClick_other" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    하단 여백-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+    </LinearLayout>
+
+</LinearLayout>
