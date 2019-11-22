@@ -19,7 +19,7 @@ class dbhelper extends SQLiteOpenHelper {
 
     //assets 폴더 안에 생성된 db파일
     String DB_PATH=""; //assets폴더에 db파일 생성할 것이므로 빈칸으로 둔다("")
-    String DB_NAME="";
+    String DB_NAME="syjh.db";
 
     SQLiteDatabase mDataBase;
     Context mcontext;
@@ -27,10 +27,10 @@ class dbhelper extends SQLiteOpenHelper {
     public dbhelper(Context context){
         super(context, "SYJHdb.db", null, 1);
         if(Build.VERSION.SDK_INT>=17){
-            DB_PATH=context.getApplicationInfo().dataDir+"//";
+            DB_PATH=context.getApplicationInfo().dataDir+"/databases/";
         }
         else{
-            DB_PATH="///"+context.getPackageName()+"//";
+            DB_PATH="/data/data/"+context.getPackageName()+"/databases/";
         }
         this.mcontext=context;
     }
