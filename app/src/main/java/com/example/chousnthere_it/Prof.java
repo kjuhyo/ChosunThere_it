@@ -1,3 +1,5 @@
+package com.example.chousnthere_it;
+
 public class Prof {
     public int id;
     public String name;
