@@ -7,11 +7,31 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+<!--sy:Splash Them-->
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/logo_splash</item>
     </style>
     <style name="MainTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/main_bg</item>
     </style>
+
+<!--sy:MainThem-->
+    <style name="MainTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/main_bg</item>
+    </style>
+<!--sy:MenuBackground Them -->
+    <style name="MenuBgThem" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/menu_base_bg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
