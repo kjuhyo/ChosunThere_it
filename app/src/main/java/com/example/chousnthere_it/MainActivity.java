@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick_univ(View view) {
-        Intent intent=new Intent(this, UnivDetailActivity.class);
+        Intent intent=new Intent(this, UnivListActivity.class);
         startActivity(intent);
     }
 
