@@ -46,6 +46,8 @@ public class UnivListActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
 
+        //email 보내는 버튼
+        /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,7 @@ public class UnivListActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+         */
 
         if (findViewById(R.id.univ_detail_container) != null) {
             // The detail container view will be present only in the
