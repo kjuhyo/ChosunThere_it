@@ -9,11 +9,11 @@
         android:label="조선대여기it"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".ProfActivity" android:theme="@style/MenuBgThem"></activity>
         <activity
             android:name=".UnivListActivity"
-            android:label="@string/title_univ_list"
+            android:label="대학건물"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
