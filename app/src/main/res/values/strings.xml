@@ -2,4 +2,42 @@
     <string name="app_name">ChousnThere_it</string>
     <string name="title_univ_list">Info</string>
     <string name="title_univ_detail">Univ Detail</string>
+
+<!--    대학건물 이름 배열-->
+    <string-array name="univ_building">
+        <item>IT 융합대학</item>
+        <item>인문과학대학</item>
+        <item>자연과학대학</item>
+        <item>법과대학</item>
+        <item>사회과학대학</item>
+        <item>경상대학</item>
+        <item>공과대학 제 1공학관</item>
+        <item>공과대학 제 2공학관</item>
+        <item>사범대학</item>
+        <item>외국어대학</item>
+        <item>체육대학</item>
+        <item>의과대학</item>
+        <item>치과대학</item>
+        <item>약학대학</item>
+        <item>미술대학</item>
+        <item>기초교육대학</item>
+        <item>보건과학대학</item>
+        <item>미래사회융합대학</item>
+        <item>중앙도서관</item>
+        <item>해오름관</item>
+        <item>입석홀</item>
+        <item>글로벌하우스</item>
+        <item>서석홀</item>
+        <item>백학학사</item>
+        <item>본관</item>
+        <item>솔마루</item>
+        <item>황금추관</item>
+        <item>학생회관</item>
+        <item>장황남 정보통신박물관</item>
+        <item>국제관</item>
+        <item>법학도서관</item>
+        <item>선박해양공학관</item>
+        <item>항공우주공학관</item>
+
+    </string-array>
 </resources>

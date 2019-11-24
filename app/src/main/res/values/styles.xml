@@ -20,6 +20,7 @@
 <!--sy:MenuBackground Them -->
     <style name="MenuBgThem" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/menu_base_bg</item>
+        <item name="android:textColor">#343434</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
