@@ -5,33 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".UnivListActivity">
+    tools:context=".UnivListActivity"
+    >
 
     <!-- 대학건물 누르면 처음 뜨는 화면 -->
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.NoActionBar"
+        android:background="#000D3D92"
         >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#0d3d92"
+
+            android:background="#000D3D92"
             app:popupTheme="@style/AppTheme.PopupOverlay"
 
-            app:titleTextColor="@android:color/white" />
-
+            app:titleTextColor="#000D3D92" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="63dp"
+            android:background="@drawable/univ_menu_title"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginVertical="46dp" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_height="510dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
 
         <include layout="@layout/univ_list" />
     </FrameLayout>

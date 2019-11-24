@@ -14,7 +14,7 @@
         <activity
             android:name=".UnivListActivity"
             android:label="대학건물"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/MenuBgThem">
         </activity>
         <activity
             android:name=".UnivDetailActivity"
@@ -27,8 +27,8 @@
         </activity>
         <activity android:name=".Classroom_empty" />
         <activity android:name=".Classroom_Location" />
-        <activity android:name=".Classroom" />
-        <activity android:name=".other" />
+        <activity android:name=".Classroom"  android:theme="@style/MenuBgThem" />
+        <activity android:name=".other"  android:theme="@style/MenuBgThem" />
         <!-- 소영 : Splash 추가 -->
         <activity
             android:name=".SplashActivity"

@@ -1,37 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".other">
-
-    <RelativeLayout
+    <!--    상단 로고 여백-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="0dp" android:layout_weight="1">
+    </LinearLayout>
 
+    <!--    메뉴 타이틀 자리-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1.6">
         <ImageView
-            android:id="@+id/searchbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/searchbar"></ImageView>
+            android:layout_width="200dp"
+            android:layout_height="63dp"
+            android:background="@drawable/other_menu_title"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginVertical="27dp"
+            >
+        </ImageView>
+    </LinearLayout>
 
-        <EditText
-            android:id="@+id/editSearch"
+    <!--    검색 및 데이터 자리-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="5.8"
+        android:orientation="vertical">
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="ex) 학식, 카페, 우체국..."></EditText>
+            android:layout_height="match_parent">
 
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/searchbar"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/menu_low_base"
+                />
+<!--            검색창 -->
+            <ImageView
+                android:id="@+id/searchbar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="80dp"
+                android:src="@drawable/searchbar">
+            </ImageView>
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="90dp"
+                android:hint="ex) 학식, 카페, 우체국..."></EditText>
 
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="-2dp"
-            android:layout_marginTop="3dp"></ListView>
-    </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--            데이터-->
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/searchbar"
+                android:layout_marginTop="15dp"
+                android:paddingHorizontal="10dp"></ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--    하단 여백-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="0.6">
+    </LinearLayout>
+
+
+</LinearLayout>
