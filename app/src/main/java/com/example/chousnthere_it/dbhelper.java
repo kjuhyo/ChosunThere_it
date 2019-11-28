@@ -25,7 +25,7 @@ class dbhelper extends SQLiteOpenHelper {
     Context mcontext;
 
     public dbhelper(Context context){
-        super(context, "SYJHdb.db", null, 1);
+        super(context, "syjh.db", null, 1);
         if(Build.VERSION.SDK_INT>=17){
             DB_PATH=context.getApplicationInfo().dataDir+"/databases/";
         }

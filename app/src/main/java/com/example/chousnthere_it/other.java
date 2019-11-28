@@ -88,7 +88,7 @@ public class other extends AppCompatActivity {
 
     public void other_List() {
 
-        list2.add("◆솔마루푸드코트\n중앙도서관 뒷편/ 해오름관 왼편 / 솔마루 2층");
+        list2.add("◆솔마루학식\n중앙도서관 뒷편/ 해오름관 왼편 / 솔마루 2층");
         list2.add("◆글로벌학식\n법과대학 뒷편 / 글로벌하우스 2층");
         list2.add("◆백학사학식\n학생회관 왼편 / 백학학사 1층");
         list2.add("◆입석홀학식\n공대1호관 1층");
@@ -100,11 +100,11 @@ public class other extends AppCompatActivity {
         list2.add("◆카페(마셔)\n솔마루푸드코트");
         list2.add("◆카페(엔젤말고)\n국제관 1층");
         list2.add("◆카페(엔젤말고)\n공대1호관 1층");
-        list2.add("◆카페(블루~~)\n글로벌하우스 2층");
+        list2.add("◆카페(블루팟_bluepot)\n글로벌하우스 2층");
         list2.add("◆은행(신협-atm)\n체육대학 1층");
         list2.add("◆은행(광주은행-창구)\n본관 북측");
-
-
+        list2.add("◆중도복사\n중앙도서관 1층");
+        list2.add("◆생협서점\n중앙도서관 1층");
     }
 
 
