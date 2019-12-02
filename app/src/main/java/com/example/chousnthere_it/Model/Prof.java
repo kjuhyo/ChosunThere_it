@@ -1,15 +1,13 @@
-package com.example.chousnthere_it;
+package com.example.chousnthere_it.Model;
 
 public class Prof {
-    public int id;
     public String name;
     public String call;
     public String location;
-    public int u_id;
+    public String u_id;
 
-    public Prof(int id, String name, String call, String location, int u_id) {
+    public Prof(String name, String call, String location, String u_id) {
         super();
-        this.id = id;
         this.name = name;
         this.call = call;
         this.location = location;
@@ -20,12 +18,6 @@ public class Prof {
         super();
     }
 
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
     public String getName() {
         return name;
     }
@@ -44,10 +36,10 @@ public class Prof {
     public void setLocation(String location) {
         this.location = location;
     }
-    public int getU_id() {
+    public String getU_id() {
         return u_id;
     }
-    public void setU_id(int u_id) {
+    public void setU_id(String u_id) {
         this.u_id = u_id;
     }
 }

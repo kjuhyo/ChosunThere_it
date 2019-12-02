@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.util.Log;
 
 import com.example.chousnthere_it.Model.Classr;
+import com.example.chousnthere_it.Model.Prof;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 import java.util.ArrayList;
@@ -14,8 +15,6 @@ import java.util.List;
 
 
 class dbhelper extends SQLiteAssetHelper {
-
-    String TAG="dbhelper"; //Logcat에 출력할 태그 이름
 
     //assets 폴더 안에 생성된 db파일
     String DB_PATH=""; //assets폴더에 db파일 생성할 것이므로 빈칸으로 둔다("")
@@ -92,6 +91,75 @@ class dbhelper extends SQLiteAssetHelper {
                 classr.setCom(cursor.getString((cursor.getColumnIndex("com"))));
 
                 result.add(classr);
+            }while(cursor.moveToNext());
+        }
+        return result;
+    }
+
+    public List<Prof> getProf(){
+        SQLiteDatabase db= getReadableDatabase();
+        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+
+        String[] sqlSelect={"name", "call", "location", "u_id"};
+        String tableName="PROF";
+
+        qb.setTables(tableName);
+        Cursor cursor=qb.query(db, sqlSelect, null, null, null, null, null);
+        List<Prof> result= new ArrayList<>();
+
+        if(cursor.moveToFirst()) {
+            do{
+                Prof prof = new Prof();
+                prof.setName(cursor.getString(cursor.getColumnIndex("name")));
+                prof.setCall(cursor.getString(cursor.getColumnIndex("call")));
+                prof.setLocation(cursor.getString(cursor.getColumnIndex("location")));
+                prof.setU_id(cursor.getString((cursor.getColumnIndex("u_id"))));
+
+                result.add(prof);
+            }while(cursor.moveToNext());
+        }
+        return result;
+    }
+
+    public List<String> getProfName(){
+        SQLiteDatabase db= getReadableDatabase();
+        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+
+        String[] sqlSelect={"name"};
+        String tableName="PROF";
+
+        qb.setTables(tableName);
+        Cursor cursor=qb.query(db, sqlSelect, null, null, null, null, null);
+        List<String> result= new ArrayList<>();
+
+        if(cursor.moveToFirst()) {
+            do{
+                result.add(cursor.getString(cursor.getColumnIndex("name")));
+            }while(cursor.moveToNext());
+        }
+        return result;
+    }
+
+    public List<Prof> getProfByName(String name){
+        SQLiteDatabase db= getReadableDatabase();
+        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+
+        String[] sqlSelect={"name", "call", "location", "u_id"};
+        String tableName="PROF";
+
+        qb.setTables(tableName);
+        Cursor cursor=qb.query(db, sqlSelect, "name LIKE ?", new String[]{"%"+name+"%"},null, null, null);
+        List<Prof> result= new ArrayList<>();
+
+        if(cursor.moveToFirst()) {
+            do{
+                Prof prof = new Prof();
+                prof.setName(cursor.getString(cursor.getColumnIndex("name")));
+                prof.setCall(cursor.getString(cursor.getColumnIndex("call")));
+                prof.setLocation(cursor.getString(cursor.getColumnIndex("location")));
+                prof.setU_id(cursor.getString((cursor.getColumnIndex("u_id"))));
+
+                result.add(prof);
             }while(cursor.moveToNext());
         }
         return result;

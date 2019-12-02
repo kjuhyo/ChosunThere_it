@@ -36,7 +36,7 @@
         android:layout_weight="0.8"
         android:orientation="vertical">
 
-        <SearchView
+       <!-- <SearchView
             android:id="@+id/search_prof"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,7 +46,16 @@
             android:contextClickable="true"
             android:inputType="text">
 
-        </SearchView>
+        </SearchView>-->
+
+        <!--주효가 추가한 부분-->
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/search_bar"
+            android:layout_alignParentTop="true"
+            android:hint="교수님 검색"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
     </LinearLayout>
 
@@ -57,11 +66,20 @@
         android:layout_weight="5"
         android:orientation="vertical">
 
-
-        <ListView
+        <!-- <ListView
             android:id="@+id/prof_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" />-->
+
+        <!--주효가 추가한 부분-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_search"
+            android:layout_below="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
     </LinearLayout>
 
 <!--    하단 여백-->
