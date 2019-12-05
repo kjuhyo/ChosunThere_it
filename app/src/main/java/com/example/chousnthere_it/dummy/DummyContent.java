@@ -68,6 +68,7 @@ public class DummyContent extends AppCompatActivity {
                 "미래사회융합대학","중앙도서관","해오름관", "입석홀","글로벌하우스","서석홀",
                 "백학학사","본관","솔마루","황금추관","학생회관","장황남 정보통신박물관","국제관",
                 "법학도서관","선박해양공학관","항공우주공학관" };
+
        for(int i=0; i<=buildingArr2.length; i++) {
            if(i==position) {
                output = buildingArr2[position-1];
