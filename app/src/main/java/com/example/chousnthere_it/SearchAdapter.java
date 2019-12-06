@@ -1,6 +1,7 @@
 package com.example.chousnthere_it;
 
 import android.content.Context;
+import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,8 @@ public class SearchAdapter extends BaseAdapter {
         this.context = context;
         this.inflate = LayoutInflater.from(context);
     }
+
+
     @Override
     public int getCount() {
         return list.size();

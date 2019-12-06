@@ -13,11 +13,10 @@
 
         <ImageView
             android:id="@+id/prof_image"
-            android:layout_width="1dp"
+            android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:layout_weight="9"
-            tools:srcCompat="@drawable/prof_icon" />
-
+            android:src="@drawable/prof_icon" />
+<!--tools:srcCompat="@drawable/prof_icon"-->
         <LinearLayout
             android:layout_width="1dp"
             android:layout_height="wrap_content"
@@ -42,7 +41,7 @@
                 android:accessibilityLiveRegion="polite"
                 android:autoLink="phone"
                 android:gravity="center_vertical|start"
-                android:text="u_id"
+                android:text="call"
                 android:textAllCaps="true"
                 android:textStyle="normal"></TextView>
 
