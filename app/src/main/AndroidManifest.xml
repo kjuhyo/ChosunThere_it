@@ -9,6 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".ProfActivity" android:theme="@style/MenuBgThem"></activity>
         <activity
@@ -24,6 +25,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.chousnthere_it.UnivListActivity" />
+
+
         </activity>
         <activity android:name=".Classroom_empty" />
         <activity android:name=".Classroom_Location" />
