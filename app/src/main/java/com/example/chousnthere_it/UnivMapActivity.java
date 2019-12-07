@@ -23,6 +23,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import net.daum.mf.map.api.CalloutBalloonAdapter;
@@ -32,6 +33,7 @@ import net.daum.mf.map.api.MapPoint;
 import net.daum.mf.map.api.MapPointBounds;
 import net.daum.mf.map.api.MapReverseGeoCoder;
 import net.daum.mf.map.api.MapView;
+
 
 public class UnivMapActivity extends AppCompatActivity implements MapView.MapViewEventListener, MapView.POIItemEventListener, MapView.CurrentLocationEventListener {
 
@@ -128,7 +130,7 @@ public class UnivMapActivity extends AppCompatActivity implements MapView.MapVie
         // 지도 들어왔을 때 처음 중심점
         mMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(35.141018, 126.931709), 2, true);
 
-        // 마커 사용 위함
+        // 이벤트 리스너
         mMapView.setMapViewEventListener(this);
         mMapView.setPOIItemEventListener(this);
 
@@ -136,8 +138,7 @@ public class UnivMapActivity extends AppCompatActivity implements MapView.MapVie
             createDefaultMarker(i);
         }
         showAll();
-    }
-
+}
     //상단바 메뉴 생성
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -408,6 +409,7 @@ public class UnivMapActivity extends AppCompatActivity implements MapView.MapVie
                 break;
         }
     }
+
 
     // 위치서비스 허용 유무 확인
     public boolean checkLocationServicesStatus() {

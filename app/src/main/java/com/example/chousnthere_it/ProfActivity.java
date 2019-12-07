@@ -40,6 +40,7 @@ public class ProfActivity extends AppCompatActivity {
 
         materialSearchBar=(MaterialSearchBar)findViewById(R.id.search_bar);
 
+
         dbhelper=new dbhelper(this);
 
         materialSearchBar.setHint("교수님 검색");
@@ -91,7 +92,6 @@ public class ProfActivity extends AppCompatActivity {
     }
 
     private void loadSuggestList() {
-
         suggestList=dbhelper.getProfName();
         materialSearchBar.setLastSuggestions(suggestList);
     }

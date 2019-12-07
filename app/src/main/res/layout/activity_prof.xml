@@ -22,41 +22,11 @@
             android:layout_height="63dp"
             android:background="@drawable/prof_menu_title"
             android:layout_marginHorizontal="100dp"
-            android:layout_marginVertical="27dp"
+            android:layout_marginVertical="24dp"
             >
 
 
         </ImageView>
-    </LinearLayout>
-
-<!--    검색창 자리-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8"
-        android:orientation="vertical">
-
-       <!-- <SearchView
-            android:id="@+id/search_prof"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="80dp"
-            android:layout_marginVertical="7dp"
-            android:background="@drawable/searchbar"
-            android:contextClickable="true"
-            android:inputType="text">
-
-        </SearchView>-->
-
-        <!--주효가 추가한 부분-->
-        <com.mancj.materialsearchbar.MaterialSearchBar
-            android:id="@+id/search_bar"
-            android:layout_alignParentTop="true"
-            android:hint="교수님 검색"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-
     </LinearLayout>
 
 <!--    데이터 자리-->
@@ -65,21 +35,23 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:orientation="vertical">
-
-        <!-- <ListView
-            android:id="@+id/prof_list"
+        <!--주효가 추가한 부분-->
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/search_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />-->
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:hint="교수님 검색" />
 
         <!--주효가 추가한 부분-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_search"
-            android:layout_below="@+id/search_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </androidx.recyclerview.widget.RecyclerView>
-
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_bar"
+            android:layout_marginTop="20dp" />
     </LinearLayout>
 
 <!--    하단 여백-->
