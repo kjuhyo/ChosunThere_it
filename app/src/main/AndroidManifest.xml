@@ -15,15 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UnivMapActivity"></activity>
+        <activity android:name=".UnivMapActivity" android:theme="@style/AppTheme"></activity>
        
         <activity
             android:name=".ProfActivity"
             android:theme="@style/MenuBgThem" />
-
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ProfActivity" android:theme="@style/MenuBgThem"></activity>
 
         <activity
             android:name=".UnivListActivity"
