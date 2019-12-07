@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.widget.Toolbar;
 
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -31,6 +32,7 @@ public class UnivDetailActivity extends AppCompatActivity {
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_univ_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);

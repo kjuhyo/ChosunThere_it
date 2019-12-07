@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UnivMapActivity"></activity>
+        <activity android:name=".UnivMapActivity" android:theme="@style/AppTheme"></activity>
        
         <activity
             android:name=".ProfActivity"
