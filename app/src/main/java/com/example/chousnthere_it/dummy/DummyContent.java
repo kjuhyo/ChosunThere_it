@@ -53,9 +53,9 @@ public class DummyContent extends AppCompatActivity {
 
     private static String makeDetails(int position) {
         StringBuilder builder = new StringBuilder();
-        builder.append("Details about Item: ");
+        builder.append("");
         for (int i = 0; i < position; i++) {
-            builder.append("\nMore details information here.");
+            builder.append("");
         }
         return builder.toString();
     }

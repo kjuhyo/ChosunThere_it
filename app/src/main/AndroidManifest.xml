@@ -16,9 +16,15 @@
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity android:name=".UnivMapActivity"></activity>
+       
         <activity
             android:name=".ProfActivity"
             android:theme="@style/MenuBgThem" />
+
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ProfActivity" android:theme="@style/MenuBgThem"></activity>
+
         <activity
             android:name=".UnivListActivity"
             android:label="대학건물"
@@ -31,6 +37,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.chousnthere_it.UnivListActivity" />
+
+
         </activity>
         <activity android:name=".Classroom_empty" />
         <activity android:name=".Classroom_Location" />

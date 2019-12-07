@@ -35,6 +35,11 @@ dependencies {
 
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     implementation 'com.github.mancj:MaterialSearchBar:+'
+/*
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+*/
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:support-v4:23.1.1'

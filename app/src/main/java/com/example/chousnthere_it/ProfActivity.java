@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.ImageView;
 
 import com.example.chousnthere_it.db_adapter.p_Adapter;
 import com.mancj.materialsearchbar.MaterialSearchBar;
@@ -18,6 +20,7 @@ public class ProfActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
+    ImageView imageView;
     p_Adapter adapter;
 
     MaterialSearchBar materialSearchBar;
@@ -29,6 +32,7 @@ public class ProfActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof);
 
+        imageView = (ImageView)findViewById(R.id.prof_image);
         recyclerView=(RecyclerView)findViewById(R.id.recycler_search);
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -39,7 +43,7 @@ public class ProfActivity extends AppCompatActivity {
         dbhelper=new dbhelper(this);
 
         materialSearchBar.setHint("교수님 검색");
-        materialSearchBar.setCardViewElevation(10);
+        materialSearchBar.setCardViewElevation(3);
         loadSuggestList();
 
         materialSearchBar.addTextChangeListener(new TextWatcher() {
