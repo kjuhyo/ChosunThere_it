@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">ChousnThere_it</string>
+    <string name="app_name">조선대여기it</string>
     <string name="title_univ_list">Info</string>
     <string name="title_univ_detail">Univ Detail</string>
 
-<!--    대학건물 이름 배열-->
+    <!--    대학건물 이름 배열-->
     <string-array name="univ_building">
         <item>IT 융합대학</item>
         <item>인문과학대학</item>

@@ -31,7 +31,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/univbtn"
-                android:onClick="onClick_univ" />
+                android:onClick="onClick_map" />
         </LinearLayout>
 <!--        강의실 버튼 자리-->
         <LinearLayout
