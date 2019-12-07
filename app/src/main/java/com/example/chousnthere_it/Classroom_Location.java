@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 
 import com.example.chousnthere_it.db_adapter.c_Adapter;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 
 import java.util.ArrayList;
@@ -24,11 +27,26 @@ public class Classroom_Location extends AppCompatActivity {
     List<String> suggestList=new ArrayList<>();
     dbhelper dbhelper;
 
+    // 층 안내도 띄워주기_소영
+    private void upFloorView() {
+        Intent transferIntent = new Intent(getApplicationContext(), ClassrmLoDetailActivity.class);
+        startActivityForResult(transferIntent, 0);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classroom_location);
+
+        // 층 안내도 띄워주기 위한 FAB_소영
+        FloatingActionButton fabFloor = (FloatingActionButton) findViewById(R.id.fab_floor);
+        fabFloor.setOnClickListener(new View.OnClickListener() {
+                                   @Override
+                                   public void onClick(View view) {
+                                       upFloorView();
+                                   }
+        });
 
         recyclerView=(RecyclerView)findViewById(R.id.recycler_search);
         layoutManager=new LinearLayoutManager(this);
