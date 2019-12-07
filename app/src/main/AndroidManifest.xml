@@ -21,10 +21,6 @@
             android:name=".ProfActivity"
             android:theme="@style/MenuBgThem" />
 
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ProfActivity" android:theme="@style/MenuBgThem"></activity>
-
         <activity
             android:name=".UnivListActivity"
             android:label="대학건물"
