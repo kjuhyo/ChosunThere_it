@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick_classroom(View view){
-        Intent intent=new Intent(this, Classroom.class);
+        Intent intent=new Intent(this, Classroom_Location.class);
         startActivity(intent);
     }
 

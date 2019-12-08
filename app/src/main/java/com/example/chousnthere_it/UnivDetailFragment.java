@@ -88,7 +88,7 @@ public class UnivDetailFragment extends Fragment {
                 Drawable drawable=getResources().getDrawable(R.drawable.u_it_hall);
                 U_image = (ImageView) rootView.findViewById(R.id.univ_image);
                 U_image.setImageDrawable(drawable);
-                ((TextView) rootView.findViewById(R.id.univ_detail)).setText("★교학팀 1층 062-230-6036\n★SW융합교육원 4층 062-230-6264 \n★전자공학부\n   학과실 1층 062-230-7070\n   학생회실 9202호 062-230-2693\n★컴퓨터공학과\n   학과실 4층 062-230-3781\n   학생회실 4020호 062-230-3345\n★정보통신공학과\n   학과실 3층 062-230-7081\n   학생회실 3049호 062-223-3838\n★매점 5층\n★프린트 2,5층\n★자판기,식수대 2,7,8,9,10층");
+                ((TextView) rootView.findViewById(R.id.univ_detail)).setText("★교학팀 1층 062-230-6036\n★SW융합교육원 4층 062-230-6264 \n★전자공학부\n   학과실 1층 062-230-7070\n   학생회실 9202호 062-230-2693\n★컴퓨터공학과\n   학과실 1층 062-230-3781\n   학생회실 4020호 062-230-3345\n★정보통신공학과\n   학과실 3층 062-230-7081\n   학생회실 3049호 062-223-3838\n★매점 5층\n★프린트 2,5층\n★자판기,식수대 2,7,8,9,10층");
 
             }
             else if(mItem.content.equals("인문과학대학") || mItem.content.equals("본관")  || mItem.content.equals("외국어대학")) {
