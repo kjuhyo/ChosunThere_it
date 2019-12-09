@@ -24,8 +24,10 @@
             android:id="@+id/classrm_floor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="1F" />
+            android:text="1F"
+            android:textSize="24sp" />
 
     </LinearLayout>
     <!--    중앙 버튼 여백 2행-->
@@ -40,6 +42,22 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             app:srcCompat="@drawable/floor_1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:paddingTop="20dp"
+            android:text="2F"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/Floor_2" />
     </LinearLayout>
     <!--    하단 여백-->
     <LinearLayout
